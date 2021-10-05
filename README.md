@@ -1,2 +1,2 @@
 # Cpp_Notes
-# These folders contain implementation of Data Stracture 
+# These folders contain Notes that i made while learning cpp
