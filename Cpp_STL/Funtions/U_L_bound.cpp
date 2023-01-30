@@ -17,9 +17,9 @@ int main()
     //* need sorted vector // log (n) lb ub fun
     //* in array case return pointer
     //* in vector, stl case return it
-    // LOWER BOUND => return (if value present return it of that value
-    //                        else return it of just next grater value)
-    // UPPER BOUND => ruturn (if value present return it of just grater value)
+    // LOWER BOUND => return (if value present return iterator of that value
+    //                        else return iterator of just next grater value)
+    // UPPER BOUND => ruturn (if value present return iterator of just grater value)
     //  used in set as s.lower_bound(num);
     //  used in map as m.lower_bound(num); //? apply on key only
 
@@ -30,7 +30,7 @@ int main()
     auto p1 = (lower_bound(arr.begin(), arr.end(), 26)); // it will return nth pointer
     if (p1 == (arr.end()))
     {
-        cout << "not found " << endl;
+        cout << "LB OF 26 not found " << endl;
     }
     cout << "\n==========================\n";
     ptr = upper_bound(arr.begin(), arr.end(), 6); //(arr + index , arr + n, 6);
@@ -40,10 +40,10 @@ int main()
     p1 = (upper_bound(arr.begin(), arr.end(), 26)); // it will return nth pointer
     if (p1 == (arr.end()))
     {
-        cout << "not found " << endl;
+        cout << "UB OF 26 not found " << endl;
     }
 
-    cout << "\n===========Array==========\n";
+    // cout << "\n===========Array==========\n";
 
     // int arr[6] = {25, 5, 5, 4, 8, 7};
     // int n = 6;
@@ -78,3 +78,5 @@ int main()
     // }
     return 0;
 }
+
+

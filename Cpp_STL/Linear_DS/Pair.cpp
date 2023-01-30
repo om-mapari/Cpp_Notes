@@ -37,4 +37,25 @@ int main()
 
     cout << "foo: " << foo.first << ", " << foo.second << '\n';
     cout << "bar: " << bar.first << ", " << bar.second << '\n';
+
+
+
+    cout << "\n======SHORTCUT FOR PAIR (auto)========\n";
+
+    vector<pair<int, int>> vp = {{1, 3}, {3, 6}, {7, 2}};
+    //iteratiors
+    vector<pair<int, int>>::iterator it, it1; // this is how define iterators
+    cout << "using iterators => " << endl;
+    for (it = vp.begin(); it != vp.end(); it++)
+    {
+        cout << "usng (*it).first " << (*it).first << " " << (*it).second << endl;
+        cout << "using it->first " << it->first << " " << it->second << endl;
+    }
+
+    //shortcut to write
+    for (auto &i : vp)
+    {
+        cout << "using auto &i " << i.first << " " << i.second << endl;
+    }
+    
 }
