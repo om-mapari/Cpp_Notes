@@ -30,8 +30,11 @@ int main()
     if (it != ms.end()) //? Always use this
         ms.erase(it);   //delete just one abc where it point
 
+    // delete all
     ms.erase("kif"); //delete both "kif" // logn
     printSet(ms);
+
+    cout << ms.count("abc") << endl; // logn
 
     return 0;
 }

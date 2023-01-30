@@ -92,7 +92,7 @@ void init_code()
 int main()
 {
 
-    init_code();
+    // init_code();
     multiset<string> ms;
     int t;
     cin >> t;

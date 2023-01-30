@@ -72,7 +72,7 @@ int main()
     cout << ("Erase from range {4,2,7,9,3,1,9} => ");
     // temp.erase(temp.begin() + 1, temp.end() - 2);
     temp.erase(temp.begin() + 2, temp.begin() + 5);
-    //v.erase(v.begin() + index, v.end());
+    // v.erase(v.begin() + index, v.end());
     PrintVector(temp);
 
     cout << "insert 8 at 1st index => ";
@@ -92,11 +92,10 @@ int main()
     int nOf = v.size();
     cout << "\nThe last element is: " << v[nOf - 1];
     cout << "\nElement At Front = " << v.front();
-    cout << "\nMaximum value in array = " << max;
 
     // v.emplace(v.begin()+position,data);
     cout << "\nEmplace element 13 at 2nd index => ";
-    v.emplace(v.begin() + 2, 13);
+    v.insert(v.begin() + 2, 13);
     PrintVector(v);
 
     //copy
